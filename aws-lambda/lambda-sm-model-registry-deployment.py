@@ -66,7 +66,6 @@ def lambda_handler(event, context):
         EndpointConfigName=endpointConfigName
     )
     
-    
     return {
         'statusCode': 200,
         'body': json.dumps('Hello from Lambda!')
