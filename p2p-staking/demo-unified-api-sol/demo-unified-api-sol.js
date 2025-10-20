@@ -129,13 +129,10 @@ async function signAndBroadcast(
   network,
   stakerAddress
 ) {
-  console.log("TEST!");
   const signer = SignerFactory.createSigner(Signers.Solana, config);
-  console.log("TEST!");
   const signedTx = await signer.sign({
     unsignedTransaction: unsignedTransactionData,
   });
-  console.log("TEST!");
   console.log("Signed transaction:", signedTx);
 
   const broadcastUrl = `${apiBase}/transaction/broadcast`;
